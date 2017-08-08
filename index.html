@@ -14,5 +14,26 @@
 
   <script src="app.js" type="text/javascript">
 
+    var eyeColor = prompt('Hello - What are the color of your eyes?');
+    alert('Your new nickname is ' + eyeColor +'-eyes.');
+    console.log('Question Prompt What is eye color');
+    console.log('Entered vaule was ' + eyeColor);
+
+      var milesFrHome = prompt('Hello - How many miles are you from home?');
+      alert('Based on the miles entered, you are ' + parseInt(milesFrHome) * 1.6 + ' kilometers from home - Welcome to the metric system.');
+      console.log('Question Prompt Miles from home');
+      console.log('Entered value was ' + milesFrHome);
+
+      var birthYear = prompt('Hello - What year were you born? Please use YYYY formatt');
+      var age = 2017 - parseInt(birthYear);
+      alert('Based on the birth year you provided, you approximately ' + age + ' years old.');
+      console.log('Question Prompt year of birth');
+      console.log('Entered value was ' + birthYear);
+      console.log('Math to get age value ' + age);
+
+      var latteSpend = prompt('Hello - What is the current daily latte spend?');
+      alert('Based on your daily spend you spend $' + parseInt(latteSpend) * 5 + ' during an average week.');
+      console.log('Question Prompt latte spend');
+      console.log('Entered value was ' + latteSpend);
   </script>
 </html>
