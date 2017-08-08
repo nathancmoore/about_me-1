@@ -14,26 +14,19 @@
 
   <script src="app.js" type="text/javascript">
 
-    var eyeColor = prompt('Hello - What are the color of your eyes?');
-    alert('Your new nickname is ' + eyeColor +'-eyes.');
-    console.log('Question Prompt What is eye color');
+    var eatsVeggie = prompt('Does Noah eat vegetables?');
+    eatsVeggie.toLowerCase()
+    if (eatsVeggie === "yes" || eatsVeggie === "y");{
+      alert('WRONG - Noah does not eat vegetables');
+    }
+      alert('WRONG - Noah does not eat vegetables');
+
+    else if (eatsVeggie === "N" || eatsVeggie === "n") {
+      alert('Correct!! - Noah does not eat vegetables');
+    }
+    alert('You did not enter a Yes/No/Y/N');
+    console.log('Question Prompt Does Noah eat vegetables?');
     console.log('Entered vaule was ' + eyeColor);
 
-      var milesFrHome = prompt('Hello - How many miles are you from home?');
-      alert('Based on the miles entered, you are ' + parseInt(milesFrHome) * 1.6 + ' kilometers from home - Welcome to the metric system.');
-      console.log('Question Prompt Miles from home');
-      console.log('Entered value was ' + milesFrHome);
-
-      var birthYear = prompt('Hello - What year were you born? Please use YYYY formatt');
-      var age = 2017 - parseInt(birthYear);
-      alert('Based on the birth year you provided, you approximately ' + age + ' years old.');
-      console.log('Question Prompt year of birth');
-      console.log('Entered value was ' + birthYear);
-      console.log('Math to get age value ' + age);
-
-      var latteSpend = prompt('Hello - What is the current daily latte spend?');
-      alert('Based on your daily spend you spend $' + parseInt(latteSpend) * 5 + ' during an average week.');
-      console.log('Question Prompt latte spend');
-      console.log('Entered value was ' + latteSpend);
   </script>
 </html>
