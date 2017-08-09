@@ -1,3 +1,7 @@
+.clearfix {
+  clear: both;
+}
+
 .GrayBkgnd {
   background-color: gray
 }
