@@ -1,7 +1,11 @@
+* {
+  font-family: Helvetica;
+}
+
 .clearfix {
   clear: both;
 }
 
 .blueBkgnd {
-  background-color: blue
+  background-color: blue;
 }
