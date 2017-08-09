@@ -13,7 +13,7 @@ else if (lowerEatsVeggie === 'no' || lowerEatsVeggie === 'n') {
   alert('Correct!! - Noah does not eat vegetables.');
 }
 else {
-  alert('You did not enter a  Yes, No, Y or N');
+  alert('You did not enter a Yes, No, Y or N');
 }
 
 var eatsMeat = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat meat?');
@@ -29,7 +29,7 @@ else if (lowerEatsMeat === 'yes' || lowerEatsMeat === 'y') {
   alert('Correct!! - Noah does eat meat.');
 }
 else {
-  alert('You did not enter a  Yes, No, Y or N');
+  alert('You did not enter a Yes, No, Y or N');
 }
 
 var eatsMeatVeggie = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat meat with vegetables?');
@@ -45,7 +45,7 @@ else if (lowerEatsMeatVeggie === 'yes' || lowerEatsMeatVeggie === 'y') {
   alert('WRONG - There are vegetables everywhere.');
 }
 else {
-  alert('You did not enter a  Yes, No, Y or N');
+  alert('You did not enter a Yes, No, Y or N');
 }
 
 var eatsPotatoes = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat potatoes?');
@@ -61,7 +61,7 @@ else if (lowerEatsMeat === 'yes' || lowerEatsMeat === 'y') {
   alert('Correct!! - Noah does eat potatoes - It goes with meat.');
 }
 else {
-  alert('You did not enter a  Yes, No, Y or N');
+  alert('You did not enter a Yes, No, Y or N');
 }
 
 var eatsMeatVegPo = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat mean and potatoes with vegetables?');
@@ -77,5 +77,5 @@ else if (lowerEatsMeatVegPo === 'yes' || lowerEatsMeatVegPo === 'y') {
   alert('WRONG!! - Noah does eat vegetables, even when hidden in meat and potatoes.');
 }
 else {
-  alert('You did not enter a  Yes, No, Y or N');
+  alert('You did not enter a Yes, No, Y or N');
 }
