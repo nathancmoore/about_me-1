@@ -1,6 +1,8 @@
 'use strict';
 
-var eatsVeggie = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat vegetables?');
+var usrName = prompt('Hello, What is your name?');
+
+var eatsVeggie = prompt(usrName + ', Using Yes, No, Y or N anwser the following: Does Noah eat vegetables?');
 var lowerEatsVeggie = eatsVeggie.toLowerCase ();
 console.log('Question Prompt Does Noah eat vegetables?');
 console.log('Entered vaule is ' + eatsVeggie);
@@ -16,7 +18,7 @@ else {
   alert('You did not enter a  Yes, No, Y or N');
 }
 
-var eatsMeat = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat meat?');
+var eatsMeat = prompt(usrName + ', Using Yes, No, Y or N anwser the following: Does Noah eat meat?');
 var lowerEatsMeat = eatsMeat.toLowerCase ();
 console.log('Question Prompt Does Noah eat meat?');
 console.log('Entered vaule is ' + eatsMeat);
@@ -32,7 +34,7 @@ else {
   alert('You did not enter a  Yes, No, Y or N');
 }
 
-var eatsMeatVeggie = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat meat with vegetables?');
+var eatsMeatVeggie = prompt(usrName + ', Using Yes, No, Y or N anwser the following: Does Noah eat meat with vegetables?');
 var lowerEatsMeatVeggie = eatsMeatVeggie.toLowerCase ();
 console.log('Question Prompt Does Noah eat meat vegetables?');
 console.log('Entered vaule is ' + eatsMeatVeggie);
@@ -48,7 +50,7 @@ else {
   alert('You did not enter a  Yes, No, Y or N');
 }
 
-var eatsPotatoes = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat potatoes?');
+var eatsPotatoes = prompt(usrName + ', Using Yes, No, Y or N anwser the following: Does Noah eat potatoes?');
 var lowerEatsPotatoes = eatsPotatoes.toLowerCase ();
 console.log('Question Prompt Does Noah eat potatoes?');
 console.log('Entered vaule is ' + eatsPotatoes);
@@ -64,7 +66,7 @@ else {
   alert('You did not enter a  Yes, No, Y or N');
 }
 
-var eatsMeatVegPo = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat mean and potatoes with vegetables?');
+var eatsMeatVegPo = prompt(usrName + ', Using Yes, No, Y or N anwser the following: Does Noah eat mean and potatoes with vegetables?');
 var lowerEatsMeatVegPo = eatsMeatVegPo.toLowerCase ();
 console.log('Question Prompt Does Noah eat meat po veg?');
 console.log('Entered vaule is ' + eatsMeatVegPo);
