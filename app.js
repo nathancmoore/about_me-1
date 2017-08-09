@@ -1,14 +1,33 @@
 'use strict';
 var usrName = prompt('Hello, Please enter your name');
 
+var question;
+question = ['Using Yes, No, Y or N anwser the following: Does Noah eat', 'Using Yes, No, Y or N anwser the following: Does Noah eat', 'Using Yes, No, Y or N anwser the following: Does Noah eat', 'Using Yes, No, Y or N anwser the following: Does Noah eat', 'Using Yes, No, Y or N anwser the following: Does Noah eat'];
+
 var foods;
 foods = ['vegetables?', 'meat?', 'meat with vegetables?', 'potatoes?', 'meat and potatoes with vegetables?'];
 
-var noReply;
-noReply = ['Correct!! - Noah does not eat', 'WRONG!! - Noah does eat', 'Correct!! - Noah does not eat','WRONG!! - Noah does eat', 'Correct!! - Noah does not eat'];
+var noRespo;
+noRespo = ['Correct!! - Noah does not eat', 'WRONG!! - Noah does eat', 'Correct!! - Noah does not eat','WRONG!! - Noah does eat', 'Correct!! - Noah does not eat'];
 
-var yesReply;
-yesReply = ['WRONG!! - Noah does not eat', 'Correct!! - Noah does eat', 'WRONG!! - Noah does not eat', 'Correct!! - Noah does eat', 'WRONG!! - Noah does not eat'];
+var yesRespo;
+yesRespo = ['WRONG!! - Noah does not eat', 'Correct!! - Noah does eat', 'WRONG!! - Noah does not eat', 'Correct!! - Noah does eat', 'WRONG!! - Noah does not eat'];
+
+var failRespo;
+failRespo = ['You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N'];
+
+for (var qcount = -1; qcount = 5; qcount++) {
+  var tempReply = prompt (usrName + question[qcount] + food[qcount]);
+
+  if (tempReply.toLowerCase === 'yes' || tempReply.toLowerCase === 'y') {
+    alert(yesRespo + food);
+  }
+  else if (tempReply.toLowerCase === 'no' || tempReply.toLowerCase === 'n') {
+    alert(noRespo + food);
+  }
+  else {
+    alert(failRespo);
+  }
 // var eatsVeggie = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat vegetables?');
 // var lowerEatsVeggie = eatsVeggie.toLowerCase ();
 // console.log('Question Prompt Does Noah eat vegetables?');
