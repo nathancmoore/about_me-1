@@ -1,6 +1,8 @@
 # about_me
 201 Week 1 About me assignment
 
+This program ask 7 questions - 1 to 5 are Yes or No answers only. Question 6 asked for number between 1 and 100. Question 7 asks to guess the names of my cat(s), past and present.
+
 Using the following:
 
 reset.css
