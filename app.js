@@ -1,4 +1,6 @@
 'use strict';
+var correctCount = 0;
+
 var usrName = prompt ('Hello, Please enter your name');
 
 var question;
@@ -30,6 +32,30 @@ for (var qcount = 0; qcount < 5; qcount++) {
   }
   else {
     alert(failRespo[qcount]);
+  }
+}
+
+var theNum = 76;
+
+for (var guessCount = 1; guessCount < 5; guessCount++) {
+  var numGuess = prompt (usrName + ' Pick a number: 1 to 100 - ' + guessCount + ' of 4 attempts.');
+
+  console.log('Guess count' + guessCount);
+  console.log('Guess ' + numGuess);
+
+  if (numGuess == theNum) {
+    alert('Correct!!');
+    guessCount = 5;
+    correctCount++;
+  }
+  else if (numGuess < 76) {
+    alert('Incorrect - Pick a larger number.');
+  }
+  else if (numGuess > 76) {
+    alert('Incorrect - Pick a smaller number.');
+  }
+  else {
+    alert('Your guess was not 1 to 100 - You lose a turn.');
   }
 }
 // var eatsVeggie = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat vegetables?');
