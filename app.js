@@ -18,6 +18,12 @@ yesRespo = ['WRONG!! - Noah does not eat', 'Correct!! - Noah does eat', 'WRONG!!
 var failRespo;
 failRespo = ['You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N'];
 
+var noInc;
+noInc = [0, 1, 0, 1, 0];
+
+var yesInc;
+yesInc = [1, 0, 1, 0, 1,];
+
 for (var qcount = 0; qcount < 5; qcount++) {
   var tempReply = prompt (usrName + ' - ' + question[qcount] + ' ' + foods[qcount]);
 
@@ -26,9 +32,11 @@ for (var qcount = 0; qcount < 5; qcount++) {
 
   if (tempReply.toLowerCase() === 'yes' || tempReply.toLowerCase() === 'y') {
     alert(yesRespo[qcount] + ' ' + foods[qcount]);
+    correctCount += yesInc[qcount];
   }
   else if (tempReply.toLowerCase() === 'no' || tempReply.toLowerCase() === 'n') {
     alert(noRespo[qcount] + ' ' + foods[qcount]);
+    correctCount += noInc[qcount];
   }
   else {
     alert(failRespo[qcount]);
