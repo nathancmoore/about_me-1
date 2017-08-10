@@ -1,5 +1,5 @@
 'use strict';
-var usrName = prompt('Hello, Please enter your name');
+var usrName = prompt ('Hello, Please enter your name');
 
 var question;
 question = ['Using Yes, No, Y or N anwser the following: Does Noah eat', 'Using Yes, No, Y or N anwser the following: Does Noah eat', 'Using Yes, No, Y or N anwser the following: Does Noah eat', 'Using Yes, No, Y or N anwser the following: Does Noah eat', 'Using Yes, No, Y or N anwser the following: Does Noah eat'];
@@ -16,18 +16,22 @@ yesRespo = ['WRONG!! - Noah does not eat', 'Correct!! - Noah does eat', 'WRONG!!
 var failRespo;
 failRespo = ['You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N'];
 
-for (var qcount = -1; qcount = 5; qcount++) {
-  var tempReply = prompt (usrName + question[qcount] + food[qcount]);
+for (var qcount = 0; qcount < 5; qcount++) {
+  var tempReply = prompt (usrName + ' ' + question[qcount] + ' ' + foods[qcount]);
 
-  if (tempReply.toLowerCase === 'yes' || tempReply.toLowerCase === 'y') {
-    alert(yesRespo + food);
+  console.log(tempReply);
+  console.log(tempReply.toLowerCase() );
+
+  if (tempReply.toLowerCase() === 'yes' || tempReply.toLowerCase() === 'y') {
+    alert(yesRespo[qcount] + ' ' + foods[qcount]);
   }
-  else if (tempReply.toLowerCase === 'no' || tempReply.toLowerCase === 'n') {
-    alert(noRespo + food);
+  else if (tempReply.toLowerCase() === 'no' || tempReply.toLowerCase() === 'n') {
+    alert(noRespo[qcount] + ' ' + foods[qcount]);
   }
   else {
-    alert(failRespo);
+    alert(failRespo[qcount]);
   }
+}
 // var eatsVeggie = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat vegetables?');
 // var lowerEatsVeggie = eatsVeggie.toLowerCase ();
 // console.log('Question Prompt Does Noah eat vegetables?');
