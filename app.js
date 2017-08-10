@@ -19,10 +19,10 @@ var failRespo;
 failRespo = ['You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N'];
 
 var noInc;
-noInc = [0, 1, 0, 1, 0];
+noInc = [1, 0, 1, 0, 1];
 
 var yesInc;
-yesInc = [1, 0, 1, 0, 1,];
+yesInc = [0, 1, 0, 1, 0];
 
 for (var qcount = 0; qcount < 5; qcount++) {
   var tempReply = prompt (usrName + ' - ' + question[qcount] + ' ' + foods[qcount]);
@@ -78,7 +78,7 @@ for (var catGuessCount = 1; catGuessCount < 7; catGuessCount++) {
   console.log('Guess count' + catGuessCount);
   console.log('Guess ' + nameGuess);
 
-  if (catNames.includes(nameGuess.toLowerCase)) {
+  if (catNames.includes(nameGuess.toLowerCase())) {
     alert('Correct!!');
     catCorrectCount++;
   }
