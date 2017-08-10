@@ -19,7 +19,7 @@ var failRespo;
 failRespo = ['You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N', 'You did not enter a Yes, No, Y or N'];
 
 for (var qcount = 0; qcount < 5; qcount++) {
-  var tempReply = prompt (usrName + ' ' + question[qcount] + ' ' + foods[qcount]);
+  var tempReply = prompt (usrName + ' - ' + question[qcount] + ' ' + foods[qcount]);
 
   console.log(tempReply);
   console.log(tempReply.toLowerCase() );
@@ -38,7 +38,7 @@ for (var qcount = 0; qcount < 5; qcount++) {
 var theNum = 76;
 
 for (var guessCount = 1; guessCount < 5; guessCount++) {
-  var numGuess = prompt (usrName + ' Pick a number: 1 to 100 - ' + guessCount + ' of 4 attempts.');
+  var numGuess = prompt (usrName + ' - Pick a number: 1 to 100 - ' + guessCount + ' of 4 attempts.');
 
   console.log('Guess count' + guessCount);
   console.log('Guess ' + numGuess);
@@ -58,6 +58,34 @@ for (var guessCount = 1; guessCount < 5; guessCount++) {
     alert('Your guess was not 1 to 100 - You lose a turn.');
   }
 }
+
+var catNames;
+catNames = ['tommy', 'tommie', 'tom', 'thom'];
+
+var catCorrectCount = 0;
+
+for (var catGuessCount = 1; catGuessCount < 7; catGuessCount++) {
+  var nameGuess = prompt (usrName + ' - Pick the names of the past and present cats of Noah  - ' + catGuessCount + ' of 6 attempts.');
+
+  console.log('Guess count' + catGuessCount);
+  console.log('Guess ' + nameGuess);
+
+  if (catNames.includes(nameGuess.toLowerCase)) {
+    alert('Correct!!');
+    catCorrectCount++;
+  }
+  else {
+    alert('Nope - Try Again');
+  }
+}
+
+alert('Correct names of the past and present cats of Noah are: ' + catNames[0] + ' ' + catNames[1] + ' ' + catNames[2] + ' ' + catNames[3]);
+
+if (catCorrectCount){
+  correctCount++;
+}
+
+alert(usrName + ' - You reached the end of the game - Your score was: ' + correctCount + ' of 7.');
 // var eatsVeggie = prompt('Using Yes, No, Y or N anwser the following: Does Noah eat vegetables?');
 // var lowerEatsVeggie = eatsVeggie.toLowerCase ();
 // console.log('Question Prompt Does Noah eat vegetables?');
